@@ -1,9 +1,11 @@
+// @flow
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 
-function derp (a:Number, b:Number, c:string) {
+function derp (a:number, b:number, c:string) {
   console.log('a plus b is: ' + (a + b));
 }
 
@@ -12,7 +14,8 @@ class App extends Component {
 
   constructor () {
       super();
-    derp(1, 2, "chyeah");
+
+    derp(3, 42," woah");
   }
 
   render() {

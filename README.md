@@ -11,7 +11,7 @@ Here are the steps I took to set up this project.
 
 2) Install bablel packages to deal with flow.
 
-`npm install --save-dev babel-cli babel-preset-flow`
+`yard add --dev babel-cli babel-preset-flow`
 
 3) add .babelrc file to root of project.
 
@@ -19,12 +19,24 @@ Here are the steps I took to set up this project.
    "presets": ["flow"]
  }`
 
-4) Tell Webstorm that you want to use Flow.
+4) Install the Flow binary.
+
+`yard add --dev flow-bin`
+
+5) Added flow command to package.json.
+
+`"flow": "flow'"`
+
+6) Run flow from Command line.
+
+`yarn run flow`
+
+7) Tell Webstorm that you want to use Flow.
 
  Webstorm -> Preferences -> Languages And Tools -> JavaScript -> Choose "Flow" from dropdown.
 
-5) Enjoy nice, strict typing in your IDE while running the dev server as usual.
+8) Enjoy nice, strict typing in your IDE while running the dev server as usual.
 
-`npms start`
+`npm start`
 
 Happy coding!
